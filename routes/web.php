@@ -56,16 +56,11 @@ Route::get('paises', function(){
 
     ];
 
-    foreach($paises as $nombre => $pais){
-    echo"<h1>$nombre</h1>";
-    echo "<pre>";
-    print_r($pais ["capital"]);
-    echo "</pre>";
-    echo "<hr />";
-
-    }
-
-
+    return view("paises")->with("naciones", $paises);
 
 });
+
+
+
+
 
