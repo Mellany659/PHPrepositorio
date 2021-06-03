@@ -60,6 +60,9 @@ Route::get('paises', function(){
 
 });
 
+Route::get('formulario_buscador', "MetabuscadorController@formulario_buscador");
+Route::post('buscar', "MetabuscadorController@buscar");
+
 
 
 

@@ -4,10 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Artist extends Model
+class Cliente extends Model
 {
     //
-    protected $table="artist";
-    protected $primaryKey = "ArtistId";
+    protected $table="customer";
+    protected $primaryKey = "CustomerId";
     public $timestamps = false;
 }
